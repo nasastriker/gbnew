@@ -1,0 +1,37 @@
+{
+  "name": "gbooking",
+  "version": "1.0.0",
+  "description": "New design main page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasastriker/gbnew.git"
+  },
+  "author": "nasastriker <nasastriker88@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nasastriker/gbnew/issues"
+  },
+  "homepage": "https://github.com/nasastriker/gbnew#readme",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-filter": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-main-bower-files": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rigger": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-stylus": "latest",
+    "gulp-uglify": "latest",
+    "gulp-watch": "latest",
+    "imagemin-pngquant": "latest",
+    "main-bower-files": "latest",
+    "rimraf": "latest"
+  }
+}
