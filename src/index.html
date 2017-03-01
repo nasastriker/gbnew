@@ -3,16 +3,28 @@
 <head lang="ru">
     <meta charset="UTF-8">
     <title>GBooking</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script type="text/javascript" src="assets/vendor.js"></script>
 </head>
 <body>
     <section class="header">
-        Header
+        Header1234
+        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
     </section>
     <section class="content">
-        Content
+        Content2
     </section>
     <section class="footer">
         //= template/footer.html
     </section>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('section').css({
+                'font-size' : '20px'
+            })
+        })
+    </script>
 </body>
 </html>

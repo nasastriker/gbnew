@@ -1,5 +1,5 @@
 {
-  "name": "gbooking",
+  "name": "nasastriker",
   "version": "0.0.0",
   "authors": [
     "Insayt <nasastriker88@gmail.com>"
@@ -13,7 +13,7 @@
     "test"
   ],
   "dependencies": {
-    "normalize.css": "*",
-    "jquery": "2.*"
+    "jquery": "2.*",
+    "bootstrap": "^3.3.7"
   }
 }
