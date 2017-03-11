@@ -1,3 +1,221 @@
+@import "config.styl"
+
+a
+	color inherit
 body
 	resize none
-	color red
+	overflow-x hidden
+	font-family: MuseoSans, sans-serif
+.btn-pnk
+	background pnk
+	color white
+
+
+.header
+	position: relative
+	margin-bottom: 40px
+	.navigation.navbar-default
+		border-radius: 0
+		width: 100%
+		position: absolute
+		background: transparent
+		border none
+		z-index 20
+		.navbar-collapse
+			padding 0
+			a
+				color white
+		.second-nav-row
+			clear: both
+			overflow: hidden
+			background: rgba(167, 188, 55, 0.7);
+			li
+				padding 0 15px
+				a
+					padding 20px 0
+					&.active
+						border-bottom 3px solid pnk
+			.logo
+				display: inline-block
+				padding-top 20px
+		.navbar-toggle
+			position: relative;
+			float: left;
+			padding: 9px 10px;
+			margin-top: 8px;
+			margin-left: 15px;
+			margin-bottom: 8px;
+			background-color: transparent;
+			border: none
+			border-radius: 0
+			.icon-bar
+				background: white
+	.owl-dots
+		display none
+	.nav-slider
+		z-index: 1
+	.header-content
+		position: absolute
+		width 100%
+		z-index: 10
+		bottom -50px
+		// img
+		// 	width 100%
+		.title-box
+			text-align: right
+			color white
+			padding-top: 100px
+			h1
+				text-transform: uppercase
+		.carousel-navigation
+			margin 40px 0
+			a
+				width 90px
+				height 90px
+				display inline-block
+				margin: 0 10px
+				img
+					width 100%
+h3
+	font-size: 32px
+	font-weight: bold
+	color #333
+	font-family: MuseoSans700, sans-serif
+.green-box
+	padding 170px 0 210px
+	background grn
+	color white
+	h3
+		color white
+		padding-bottom 30px
+.linear
+	position: relative
+	margin: 0 -20px
+	.container-fluid
+		padding: 90px 0
+		position: relative
+		z-index: 2
+		background white
+	&.bottom
+		&:after
+			content: ''
+			position: absolute
+			height: 150px
+			width: 100%
+			transform: rotate(-5deg)
+			bottom: -80px
+			left: 0
+			right: 0
+			background: #FFF
+	&.b-bottom
+		&:before
+			content: ''
+			position: absolute
+			height: 150px
+			width: 100%
+			transform: rotate(5deg)
+			bottom: -80px
+			left: 0
+			right: 0
+			background: #FFF
+	&.top
+		&:after
+			content: ''
+			position: absolute
+			z-index: 1
+			height: 150px
+			width: 100%
+			transform: rotate(-5deg)
+			top: -80px
+			left: 0
+			right: 0
+			background: #FFF
+			box-shadow: inset 0px 3px 21px 0px rgba(209,209,209,1)
+	&.b-top
+		&:before
+			content: ''
+			position: absolute
+			height: 150px
+			width: 100%
+			transform: rotate(5deg)
+			top: -80px
+			left: 0
+			right: 0
+			background: #FFF
+			box-shadow: inset 0px 3px 21px 0px rgba(209,209,209,1)
+.gray-box
+	background #f3f3f3
+	.container-fluid
+		background #f3f3f3
+	&.bottom
+		&:after
+			background: #f3f3f3
+	&.b-bottom
+		&:before
+			background: #f3f3f3
+			z-index: 4
+	&.top
+		&:after
+			background: #f3f3f3
+	&.b-top
+		&:before
+			background: #f3f3f3
+.work-with
+	text-align: center
+	h3
+		padding-bottom: 30px
+	ul
+		list-style: none
+		li
+			display inline-block
+			padding 10px 30px
+.rezidents-box
+	.wh-bg
+		text-align: right
+		.r-desk
+			max-width: 530px
+			text-align: left
+			width 530px
+			height 180px
+			font-size 28px
+			font-weight 300
+			font-style normal
+			font-stretch normal
+			line-height 1.29
+			letter-spacing normal
+			color #5e5e5e
+	.pnk-bg
+		background pnk
+		border-radius: 20px
+		padding 40px
+		color white
+		text-transform: uppercase
+		img
+			margin-left: 30px
+.facts-box
+	background grn
+	color white	
+	text-align: center
+	ul
+		list-style: none
+		li
+			display inline-block
+			padding 0 50px
+			span
+				display block
+				font-size 16px
+				line-height: 1.25
+				&:first-child
+					font-size: 48px
+					font-weight: bold
+					padding-bottom 5px
+						
+.footer
+	background: #2e2e2e
+	padding 44px 0
+	color: #fff
+	.container
+		span
+			opacity: 0.5
+			&:first-child
+				margin-right: 15px

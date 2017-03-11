@@ -68,12 +68,12 @@ gulp.task('style:build', function () {
 });
 gulp.task('image:build', function () {
     gulp.src(path.src.img) 
-        .pipe(imagemin({ 
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()],
-            interlaced: true
-        }))
+        // .pipe(imagemin({ 
+        //     progressive: true,
+        //     svgoPlugins: [{removeViewBox: false}],
+        //     use: [pngquant()],
+        //     interlaced: true
+        // }))
         .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
 });
@@ -120,7 +120,27 @@ gulp.task('watcher',function(){
     });
 });
 
-gulp.task('mainfiles', function() {
+gulp.task('css', function() {
+  var filterCSS = gulpFilter('**/*.css', { restore: true });
+    return gulp.src('./bower.json')
+        .pipe(mainBowerFiles({
+            overrides: {
+                bootstrap: {
+                    main: [
+                        './dist/js/bootstrap.js',
+                        './dist/css/*.min.*',
+                        './dist/fonts/*.*'
+                    ]
+                }
+            }
+        }))
+  .pipe(filterCSS)
+  .pipe(concat('vendor.css'))
+  .pipe(filterCSS.restore)
+    .pipe(gulp.dest('build/assets'))
+});
+
+gulp.task('vendorjs', function() {
   var filterJS = gulpFilter('**/*.js', { restore: true });
     return gulp.src('./bower.json')
         .pipe(mainBowerFiles({
@@ -141,4 +161,4 @@ gulp.task('mainfiles', function() {
     .pipe(gulp.dest('build/assets'))
 });
 
-gulp.task('default', ['mainfiles', 'build','watcher', 'browserSync']);
+gulp.task('default', ['css', 'vendorjs', 'build','watcher', 'browserSync']);

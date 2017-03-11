@@ -35,5 +35,8 @@
     "imagemin-pngquant": "latest",
     "main-bower-files": "latest",
     "rimraf": "latest"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.2.0"
   }
 }

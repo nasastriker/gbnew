@@ -3,28 +3,327 @@
 <head lang="ru">
     <meta charset="UTF-8">
     <title>GBooking</title>
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/vendor.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <script type="text/javascript" src="assets/vendor.js"></script>
 </head>
 <body>
-    <section class="header">
-        Header1234
-        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-    </section>
-    <section class="content">
-        Content2
-    </section>
-    <section class="footer">
-        //= template/footer.html
-    </section>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('section').css({
-                'font-size' : '20px'
-            })
-        })
-    </script>
+    <header class="header">
+        //= template/nav.html
+        <div class="nav-slider owl-carousel owl-theme">
+            <div class="item" data-hash="n-one"><img src="img/1.png" alt=""></div>
+            <div class="item" data-hash="n-two"><img src="img/2.png" alt=""></div>
+            <div class="item" data-hash="n-three"><img src="img/4.png" alt=""></div>
+            <div class="item" data-hash="n-four"><img src="img/3.png" alt=""></div>
+        </div>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="img/header-splite.png" alt="">
+                    </div>
+                    <div class="col-md-7 title-box">
+                        <h1>Увеличим количество записей с вашего сайта</h1>
+                        <p>Виджет олнайн-записи для сайта и система управления бизнесом: учет, ведение и SMS-оповещение клиентов</p>
+                        
+                        <div class="carousel-navigation">
+                            <a href="#n-one"><img src="img/Bitmap 1@3x.png.png" alt=""></a>
+                            <a href="#n-two"><img src="img/Bitmap 2@3x.png.png" alt=""></a>
+                            <a href="#n-three"><img src="img/Bitmap 3@3x.png.png" alt=""></a>
+                            <a href="#n-four"><img src="img/Bitmap 4@3x.png.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="rezidents-box linear bottom">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 wh-bg">
+                        <div class="r-desk">
+                            <h3>GBooking</h3>
+                            <p>комплексный инструмент записи и учета клиентов для автоматизации бизнеса, который помогает увеличить прибыль и вывети качество обслуживания на новый уровень</p>
+                        </div> 
+                    </div>
+                    <div class="col-sm-6 pnk-bg">
+                        <div class="r-img">
+                            <span>Мы - резиденты</span>
+                            <img src="img/combined-shape.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="facts-box green-box">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Факты</h3>
+                        <ul>
+                            <li>
+                                <span>60 129</span>
+                                <span>Пользователей<br>системы</span>
+                            </li>
+                            <li>
+                                <span>532</span>
+                                <span>Подключенных<br>компаний</span>
+                            </li>
+                            <li>
+                                <span>> 4 млн</span>
+                                <span>Записей с помощью<br>сервиса</span>
+                            </li>
+                            <li>
+                                <span>> 8 млн</span>
+                                <span>Отправленных<br>уведомлений</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-with linear top b-bottom">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>С нами работают</h3>
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <img src="img/page-1.svg" alt="">
+                                    <h4>Яндекс.Такси</h4>
+                                    <p>подключен к системе <br>в 2014 году</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="img/set-studiy-manikyura-lenyi-leninoy-300-x-225-copy.jpg" srcset="img/set-studiy-manikyura-lenyi-leninoy-300-x-225-copy@2x.jpg 2x, img/set-studiy-manikyura-lenyi-leninoy-300-x-225-copy@3x.jpg 3x" class="Set-studiy-manikyura-Lenyi-Leninoy-300x225-Copy">
+                                    <h4>Лена Ленина</h4>
+                                    <p>подключен к системе <br>в 2015 году</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="img/unspecified-copy.jpg" srcset="img/unspecified-copy@2x.jpg 2x, img/unspecified-copy@3x.jpg 3x" class="unspecified-copy">
+                                    <h4>MEDESK</h4>
+                                    <p>подключен к системе <br>в 2016 году</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="img/page-1.svg" alt="">
+                                    <h4>Яндекс.Здоровье</h4>
+                                    <p>подключен к системе <br>в 2015 году</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <img src="img/unspecified-copy-5.jpg" srcset="img/unspecified-copy-5@2x.jpg 2x, img/unspecified-copy-5@3x.jpg 3x" class="unspecified-copy-5">
+                                    <h4>iTop.ru</h4>
+                                    <p>подключен к системе <br>в 2015 году</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <span>и еще</span>
+                            <b>529</b>
+                            <span>компаний</span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    <div class="green-box">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Виджет онлайн-записи</h3>
+                        <ul>
+                            <li>
+                                <img src="img/24.svg" alt="">
+                                <b>Круглосуточная</b>
+                                <span>запись на сайте</span>
+                            </li>
+                            <li>
+                                <img src="img/sms.svg" alt="">
+                                <b>SMS</b>
+                                <span>- напоминания клиентам за час до встречи</span>
+                            </li>
+                            <li>
+                                <img src="img/online-card.svg" alt="">
+                                <b>Онлайн</b>
+                                <span>-оплата на вашем сайте</span>
+                            </li>
+                            <li>
+                                <img src="img/button-record.svg" alt="">
+                                <b>Кнопки записи</b>
+                                <span> для социальных сетей</span>
+                            </li>
+                            <li>
+                                <img src="img/remowe-window.svg" alt="">
+                                <b>Устранение</b>
+                                <span> окон в расписании</span>
+                            </li>
+                        </ul>
+                        <a href="">
+                            еще <i class="ion-chevron-right"></i>
+                        </a>
+                        <a href="" class="btn btn-pnk">Подробнее</a>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-app-box linear bottom b-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="img/group-39.jpg" srcset="img/group-39@2x.jpg 2x, img/group-39@3x.jpg 3x" class="Group-39">
+                        <img src="img/group-40.jpg" srcset="img/group-40@2x.jpg 2x, img/group-40@3x.jpg 3x" class="Group-40">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Мобильное приложение</h3>
+                        <ul>
+                            <li>
+                                <img src="img/heart.svg" alt="">
+                                <b>Повышение лояльности</b>
+                                <span>постоянных клиентов</span>
+                            </li>
+                            <li>
+                                <img src="img/percent.svg" alt="">
+                                <b>Информирование</b>
+                                <span>об акциях и спецпредложениях</span>
+                            </li>
+                            <li>
+                                <img src="img/convenient_record.svg" alt="">
+                                <b>Удобная запись</b>
+                                <span>к любому специалисту</span>
+                            </li>
+                        </ul>
+                        <a href="">
+                            еще <i class="ion-chevron-right"></i>
+                        </a>
+                        <a href="" class="btn btn-pnk">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="green-box">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Журнал администратора</h3>
+                        <ul>
+                            <li>
+                                <img src="img/a1.svg" alt="">
+                                <b>Автоматически </b>
+                                <span>собирается база клиентов</span>
+                            </li>
+                            <li>
+                                <img src="img/a2.svg" alt="">
+                                <b>Удобно управлять </b>
+                                <span>скидками на "непопулярные" часы</span>
+                            </li>
+                            <li>
+                                <img src="img/a3.svg" alt="">
+                                <b>Рассылки </b>
+                                <span>с акциями по клиентской базе</span>
+                            </li>
+                            <li>
+                                <img src="img/a4.svg" alt="">
+                                <b>Легко </b>
+                                <span>рассчитать заработную плату сотрудникам</span>
+                            </li>
+                            <li>
+                                <img src="img/a5.svg" alt="">
+                                <b>Отслеживание </b>
+                                <span>отзывов о сотрудниках с сервисом "Жалобы"</span>
+                            </li>
+                        </ul>
+                        <a href="">
+                            еще <i class="ion-chevron-right"></i>
+                        </a>
+                        <a href="" class="btn btn-pnk">Подробнее</a>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gray-box linear top b-bottom">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span>
+                            <img src="img/moon.svg" alt="">
+                            <b>33,7%</b>
+                            <p>записываются ночью</p>
+                        </span>
+                        <span>
+                            <img src="img/monitor.svg" alt="">
+                            <b>40%</b>
+                            <p>записываются онлайн</p>
+                        </span>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Мы гарантируем увеличение количества записей с вашего сайта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="linear bottom">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Продвигайте ваш бизнес</h3>
+                        <p>Установите кнопку <b>Gbooking</b> на партнерские сайты и получите еще больше записей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    
+    //= template/footer.html
+
 </body>
+<script type="text/javascript" src="assets/vendor.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.nav-slider').owlCarousel({
+            items: 1,
+            margin: 0,
+            loop: true,
+            autoplay: true,
+            URLhashListener:true
+        });
+    });
+</script>
 </html>
